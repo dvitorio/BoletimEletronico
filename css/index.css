@@ -1,0 +1,203 @@
+.telaPreta{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.589);
+    display: none;
+}
+.home{
+    display: block;
+    padding: 10px 30px;
+    width: 100vw;
+    height: 5vh;
+}
+.home i{
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: grey;
+}
+.home i:hover{
+    cursor: pointer;
+    color: red;
+}
+@keyframes containerUnidade {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.tituloSecao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tituloSecao h1{
+    font-size: 3rem;
+    color: cornflowerblue;
+    margin: 5vh 0 -15vh 0;
+}
+.containerMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30vh;
+}
+.buscar{
+    position: absolute;
+    width: 45vw;
+    height: 6vh;
+    top: 25vh;
+    left: 30vw;
+}
+.buscar input{
+    width: 550px;
+    height: 40px;
+    outline: 0;
+    border: 1px solid rgb(197, 211, 236);
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px lightgrey;
+    padding-left: 10px;
+}
+.buscar i{
+    cursor: pointer;
+    vertical-align: middle;
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 2rem;
+    color: cornflowerblue;
+}
+.unidadeCaixa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px rgb(158, 152, 152);
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 10px;
+}
+.unidadeCaixa i{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.unidadeCaixa:hover{
+    background-color: rgb(60, 60, 240);
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+.containerUnidade{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.678);
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+.unidade1 span, .unidade2 span, .unidade3 span, .unidade4 span{
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 90%;
+    margin-top: 2%;
+    text-shadow: 1px 1px 1px black;
+}
+.unidade1 span:hover, .unidade2 span:hover, .unidade3 span:hover, .unidade4 span:hover{
+    transform: scale(1.25);
+    color: red;
+}
+.unidade1, .unidade2, .unidade3, .unidade4{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 10vh;
+    left: 30%;
+    width: 700px;
+    min-height: 500px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    transition: all 0.3s;
+    animation-name: containerUnidade;
+    animation-duration: 0.4s;
+}
+.foto{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: lightgrey;
+}
+.unidade1 h3, .unidade2 h3, .unidade3 h3, .unidade4 h3{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2vh;
+    margin-top: 5px;
+}
+.unidade1 input, .unidade2 input, .unidade3 input, .unidade4 input{
+    width: 550px;
+    height: 40px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 1.1rem;
+    color:rgb(60, 60, 240);
+    padding-left: 5px;
+    margin: 10px;  
+}
+.unidade1 input:focus, .unidade2 input:focus, .unidade3 input:focus, .unidade4 input:focus{
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+.caixaNotas{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 560px;
+    margin-top: 10px;
+}
+.caixaNotas input{
+    margin: 10px 5px;
+    width: 50%;
+}
+.botoesNotas{
+    width: 550px;
+    margin: 20px 0;
+}
+.botoesNotas button{
+    width: 100px;
+    height: 35px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 3px 3px 9px rgb(66, 64, 64);
+    outline: 0;
+    margin-right: 10px;
+
+}

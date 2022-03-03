@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim eletrônico</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+  <div class="telaPreta" id="telaPreta">
+    <h1></h1>
+  </div>
+
+  
+  <!--Container do Menu de opções-->
+  <div class="home">
+      <i class="fa-solid fa-house" href="#"></i>
+  </div>
+  <div class="tituloSecao">
+      <h1>Boletim eletrônico - calendário 2022</h1>
+  </div>
+  <div class="buscar">
+    <input type="text" id="buscar" placeholder="Nome do aluno...">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </div>
+  <div class="containerMenu" id="containerMenu">
+        <div class="unidadeCaixa animate__animated animate__fadeInUpBig" id="unidadeCaixa1" onclick="abrirUnidade1()"> 1ª unidade</div>
+        <div class="unidadeCaixa animate__animated animate__fadeInDown" id="unidadeCaixa2" onclick="abrirUnidade2()"> 2ª unidade</div>
+        <div class="unidadeCaixa animate__animated animate__fadeInUp" id="unidadeCaixa3" onclick="abrirUnidade3()"> 3ª unidade</div>
+        <div class="unidadeCaixa animate__animated animate__fadeInDown" id="unidadeCaixa4" onclick="abrirUnidade4()"> 4ª unidade</div>
+  </div>
+
+  <!--Final da seção de menu de opções-->
+
+
+  <!--Container das unidades-->
+    <div class="containerUnidade" id="containerUnidade">
+      <div class="unidade1" id="unidade1">
+        <span onclick="fecharUnidade1()">&times;</span>
+          <h3>Controle de notas da 1ª unidade</h3>
+          <div class="foto">
+            <img src="" alt="">
+          </div>
+          <input type="text" id="aluno" placeholder="Nome do aluno">
+          <input type="email" id="email" placeholder="E-mail do aluno">
+          <div class="caixaNotas">
+            <input type="text" id="teste1" placeholder="Nota do 1º teste">
+            <input type="text" id="prova1" placeholder="Nota da 1ª prova">
+          </div>
+          <div class="caixaNotas">
+            <input type="text" id="final1" onchange="media1()" placeholder="Total da 1ª prova final">
+            <input type="text" id="media1" onchange="media1()" disabled="" placeholder="Média da 1ª unidade" style="font-size: 1.8rem; text-align: center; font-weight: bolder;">
+          </div>
+
+          <div class="botoesNotas">
+            <button>Imprimir</button>
+            <button>Cancelar</button>
+          </div>
+      </div>
+
+      <div class="unidade2" id="unidade2" style="visibility:hidden">
+        <span onclick="fecharUnidade2()">&times;</span>
+          <h3>Controle de notas da 2ª unidade</h3>
+          <div class="foto">
+            <img src="" alt="">
+          </div>
+          <input type="text" id="aluno" placeholder="Nome do aluno">
+          <input type="email" id="email" placeholder="E-mail do aluno">
+          <div class="caixaNotas">
+            <input type="text" id="teste2" placeholder="Nota do 2º teste">
+            <input type="text" id="prova2" placeholder="Nota da 2ª prova">
+          </div>
+          <div class="caixaNotas">
+            <input type="text" id="final2" onchange="media2()" placeholder="Total da 2ª prova final">
+            <input type="text" id="media2" onchange="media2()" disabled="" placeholder="Média da 2ª unidade" style="font-size: 1.8rem; text-align: center; font-weight: bolder;">
+          </div>
+
+          <div class="botoesNotas">
+            <button>Imprimir</button>
+            <button>Cancelar</button>
+          </div>
+      </div>
+
+      <div class="unidade3" id="unidade3" style="visibility:hidden">
+        <span onclick="fecharUnidade3()">&times;</span>
+          <h3>Controle de notas da 3ª unidade</h3>
+          <div class="foto">
+            <img src="" alt="">
+          </div>
+          <input type="text" id="aluno" placeholder="Nome do aluno">
+          <input type="email" id="email" placeholder="E-mail do aluno">
+          <div class="caixaNotas">
+            <input type="text" id="teste3" placeholder="Nota do 3º teste">
+            <input type="text" id="prova3" placeholder="Nota da 3ª prova">
+          </div>
+          <div class="caixaNotas">
+            <input type="text" id="final3" onchange="media3()" placeholder="Total da 3ª prova final">
+            <input type="text" id="media3" onchange="media3()" disabled="" placeholder="Média da 3ª unidade" style="font-size: 1.8rem; text-align: center; font-weight: bolder;">
+          </div>
+
+          <div class="botoesNotas">
+            <button>Imprimir</button>
+            <button>Cancelar</button>
+          </div>
+      </div>
+
+      <div class="unidade4" id="unidade4" style="visibility:hidden">
+        <span onclick="fecharUnidade4()">&times;</span>
+          <h3>Controle de notas da 4ª unidade</h3>
+          <div class="foto">
+            <img src="" alt="">
+          </div>
+          <input type="text" id="aluno" placeholder="Nome do aluno">
+          <input type="email" id="email" placeholder="E-mail do aluno">
+          <div class="caixaNotas">
+            <input type="text" id="teste4" placeholder="Nota do 4º teste">
+            <input type="text" id="prova4" placeholder="Nota da 4ª prova">
+          </div>
+          <div class="caixaNotas">
+            <input type="text" id="final4" onchange="media4()" placeholder="Total da 4ª prova final">
+            <input type="text" id="media4" onchange="media4()" disabled="" placeholder="Média da 4ª unidade" style="font-size: 1.8rem; text-align: center; font-weight: bolder;">
+          </div>
+
+          <div class="botoesNotas">
+            <button>Imprimir</button>
+            <button>Cancelar</button>
+          </div>
+      </div>
+    </div>
+    <!--Final do container de unidades-->
+    
+   
+</body>
+</html>
